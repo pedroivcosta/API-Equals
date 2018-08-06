@@ -1,0 +1,27 @@
+{
+  "name": "apiequals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedroivcosta/API-Equals.git"
+  },
+  "keywords": [
+    "API",
+    "test",
+    "mocha",
+    "chai",
+    "supertest",
+    "equals"
+  ],
+  "author": "Pedro Ivo Vilela Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedroivcosta/API-Equals/issues"
+  },
+  "homepage": "https://github.com/pedroivcosta/API-Equals#readme"
+}
