@@ -5,8 +5,13 @@ process.env.NODE_ENV = 'test';
     let expect = require('chai').expect
     //let server = 'http://192.168.121.219:8080/api';
     let server = 'https://app.equals.com.br/api'
+    let chaiHttp = require('chai-http');
+    let chaiSubset = require('chai-subset');
+    chai.use(chaiHttp);
     chai.use(require('chai-like'));
     chai.use(require('chai-things'));
+
+//    
 
 describe('Testes API Equals - POST', function(){
     it('/POST login correto', (done) => {
@@ -35,6 +40,8 @@ describe('Testes API Equals - POST', function(){
                         },
                         urlAplicacao: 'https://app2.equals.com.br/'
                     },});
+
+                
                 //res.body.tokens.should.all.have.property('id', 9543) //todo mundo tem que ter a mesma chave valor
                 done();
             }
